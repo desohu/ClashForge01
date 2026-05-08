@@ -18,6 +18,31 @@ proxies:
   network: tcp
   aead: true
   tfo: false
+- name: SG035登hy2|9MB/s
+  type: hysteria2
+  server: vpn-sg-003.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-003.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: CH941vless|8MB/s
+  type: vless
+  server: 172.65.111.43
+  port: 22
+  uuid: monacoVPN
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
+    headers:
+      Host:
+      - ''
 - name: 美国007hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
@@ -37,13 +62,6 @@ proxies:
   ports: 50000-60000
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: FR566登hy2
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
 - name: US789登vmess
   type: vmess
   server: 82.198.246.233
@@ -72,40 +90,9 @@ proxies:
   servername: pl74.mechvpn.online
   client-fingerprint: chrome
   network: tcp
-- name: CH902|2MB/s
-  type: vless
-  server: 172.65.111.43
-  port: 22
-  uuid: monacoVPN
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-    headers:
-      Host:
-      - ''
 - name: US772|16MB/s
   type: vmess
   server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US1043|2MB/s
-  type: vmess
-  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -325,22 +312,6 @@ proxies:
   port: 52318
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: HK010登vless|5MB/s
-  type: vless
-  server: 8.218.99.8
-  port: 443
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-    short-id: ''
-  servername: j.6sc.co
-  client-fingerprint: chrome
-  network: tcp
 - name: VN128hy2|3MB/s
   type: hysteria2
   server: vpn-vn-001.fastervpn.world
@@ -349,37 +320,6 @@ proxies:
   skip-cert-verify: true
   port: 443
 - name: FR204hy2|8MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-- name: VN240hy2|3MB/s
-  type: hysteria2
-  server: vpn-vn-001.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-vn-001.fastervpn.world
-  skip-cert-verify: true
-  port: 443
-- name: FR263hy2|4MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-  ports: 41000-42000
-- name: VN288ss|118KB/s
-  type: ss
-  server: 103.186.154.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: FR306hy2|10MB/s
   type: hysteria2
   server: 163.172.113.118
   password: dongtaiwang.com
@@ -395,97 +335,6 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: FR371hy2|9MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 443
-  ports: 41000-42000
-- name: FR382hy2|7MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-- name: FR472hy2|9MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 443
-  ports: 41000-42000
-- name: FR479hy2|9MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 443
-  ports: 41000-42000
-- name: FR525hy2|7MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-- name: FR545hy2|8MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 443
-  ports: 41000-42000
-- name: FR566hy2|8MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-- name: VN589ss|35KB/s
-  type: ss
-  server: 103.186.154.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: FR729hy2|7MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-- name: FR766hy2|8MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 443
-  ports: 41000-42000
-- name: FR781hy2|11MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-- name: FR850hy2|4MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
 - name: CH902vless|2MB/s
   type: vless
   server: 172.65.111.43
@@ -512,14 +361,13 @@ proxy-groups:
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -541,26 +389,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: ♻️ 自动选择
   type: url-test
@@ -569,14 +400,13 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -598,40 +428,22 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -653,40 +465,22 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -708,26 +502,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: 🎮️ 游戏平台
   type: select
@@ -735,14 +512,13 @@ proxy-groups:
   - 🎯 国内直连
   - 🚀 手动切换
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -764,39 +540,21 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -818,26 +576,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: Ⓜ️ 微软服务
   type: select
@@ -845,14 +586,13 @@ proxy-groups:
   - 🎯 国内直连
   - 🚀 手动切换
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -874,26 +614,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: 📲 电报信息
   type: select
@@ -901,14 +624,13 @@ proxy-groups:
   - 🚀 手动切换
   - ♻️ 自动选择
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -930,26 +652,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: 🍎 苹果服务
   type: select
@@ -957,14 +662,13 @@ proxy-groups:
   - 🎯 国内直连
   - 🚀 手动切换
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -986,26 +690,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: 🎯 国内直连
   type: select
@@ -1013,14 +700,13 @@ proxy-groups:
   - DIRECT
   - 🚀 手动切换
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1042,26 +728,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 - name: 🐟 漏网之鱼
   type: select
@@ -1069,14 +738,13 @@ proxy-groups:
   - 🚀 手动切换
   - 🎯 国内直连
   - 美国001vmess
+  - SG035登hy2|9MB/s
+  - CH941vless|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - FR566登hy2
   - US789登vmess
   - op_PL_3|1.7MB/s
-  - CH902|2MB/s
   - US772|16MB/s
-  - US1043|2MB/s
   - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1098,26 +766,9 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - HK010登vless|5MB/s
   - VN128hy2|3MB/s
   - FR204hy2|8MB/s
-  - VN240hy2|3MB/s
-  - FR263hy2|4MB/s
-  - VN288ss|118KB/s
-  - FR306hy2|10MB/s
   - VN313ss|220KB/s
-  - FR371hy2|9MB/s
-  - FR382hy2|7MB/s
-  - FR472hy2|9MB/s
-  - FR479hy2|9MB/s
-  - FR525hy2|7MB/s
-  - FR545hy2|8MB/s
-  - FR566hy2|8MB/s
-  - VN589ss|35KB/s
-  - FR729hy2|7MB/s
-  - FR766hy2|8MB/s
-  - FR781hy2|11MB/s
-  - FR850hy2|4MB/s
   - CH902vless|2MB/s
 rule-providers:
   Proxy:
