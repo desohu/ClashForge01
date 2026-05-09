@@ -312,29 +312,6 @@ proxies:
   port: 52318
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: VN128hy2|3MB/s
-  type: hysteria2
-  server: vpn-vn-001.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-vn-001.fastervpn.world
-  skip-cert-verify: true
-  port: 443
-- name: FR204hy2|8MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
-- name: VN313ss|220KB/s
-  type: ss
-  server: 103.186.154.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
 - name: CH902vless|2MB/s
   type: vless
   server: 172.65.111.43
@@ -353,6 +330,76 @@ proxies:
     headers:
       Host:
       - ''
+- name: IN089登hy2|14MB/s
+  type: hysteria2
+  server: vpn-in-002.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-in-002.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: IN347登hy2|7MB/s
+  type: hysteria2
+  server: vpn-in-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: VPN_001登
+  type: vless
+  server: 159.195.82.187
+  port: 9443
+  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
+    short-id: 2344766a270a6298
+  servername: yahoo.com
+  client-fingerprint: chrome
+  network: tcp
+- name: US_003登|2.4MB/s
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: US_004登|2.7MB/s
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: US_008登|6.0MB/s
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -389,10 +436,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -428,10 +478,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: 📹 YouTube
   type: select
   proxies:
@@ -465,10 +518,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -502,10 +558,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: 🎮️ 游戏平台
   type: select
   proxies:
@@ -540,10 +599,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
@@ -576,10 +638,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -614,10 +679,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: 📲 电报信息
   type: select
   proxies:
@@ -652,10 +720,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -690,10 +761,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: 🎯 国内直连
   type: select
   proxies:
@@ -728,10 +802,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -766,10 +843,13 @@ proxy-groups:
   - NL002hy2
   - AZ001hy2
   - 美国004hy2
-  - VN128hy2|3MB/s
-  - FR204hy2|8MB/s
-  - VN313ss|220KB/s
   - CH902vless|2MB/s
+  - IN089登hy2|14MB/s
+  - IN347登hy2|7MB/s
+  - VPN_001登
+  - US_003登|2.4MB/s
+  - US_004登|2.7MB/s
+  - US_008登|6.0MB/s
 rule-providers:
   Proxy:
     type: http
