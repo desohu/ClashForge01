@@ -103,24 +103,6 @@ proxies:
   network: tcp
   aead: true
   tfo: false
-- name: TW1244|5MB/s
-  type: vless
-  server: 125.227.219.98
-  port: 6235
-  uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d146
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: baidu.com
-  servername: baidu.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /xxxxhttp
-    headers:
-      Host: baidu.com
 - name: HK002|6.1MB/s
   type: vless
   server: 104.18.46.69
@@ -330,20 +312,6 @@ proxies:
     headers:
       Host:
       - ''
-- name: IN089登hy2|14MB/s
-  type: hysteria2
-  server: vpn-in-002.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-in-002.fastervpn.world
-  skip-cert-verify: true
-  port: 443
-- name: IN347登hy2|7MB/s
-  type: hysteria2
-  server: vpn-in-001.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-  port: 443
 - name: US_003登|2.4MB/s
   type: vmess
   server: 82.198.246.233
@@ -383,17 +351,6 @@ proxies:
   network: tcp
   aead: true
   tfo: false
-- name: 新加坡004登trojan
-  type: trojan
-  server: pokemonsg-01.yunjnet.com
-  port: 55016
-  password: 2d81339d-159b-40b2-a5dc-f56858fa7bef
-  udp: true
-  tfo: false
-  tls: true
-  sni: www.lamer.com.sg
-  skip-cert-verify: true
-  network: tcp
 - name: 美国002vless
   type: vmess
   server: 64.186.233.131
@@ -424,13 +381,6 @@ proxies:
   servername: apps.apple.com
   client-fingerprint: chrome
   network: tcp
-- name: 日本002hy2
-  type: hysteria2
-  server: 23.106.132.204
-  password: hy2Pass2026!
-  sni: 23.106.132.204
-  skip-cert-verify: true
-  port: 8443
 - name: 俄罗斯001vless
   type: vless
   server: 194.226.169.189
@@ -463,23 +413,6 @@ proxies:
     public-key: o8Ne4dsatUimeCfmnHHBKv0rdfs6rWicF3ZDyQrjAnE
     short-id: ''
   servername: www.tesla.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 新加坡004登vless
-  type: vless
-  server: atp12138.me
-  port: 443
-  uuid: ea71f5aa-dffd-45cc-a606-271f03815991
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: n7BhenCYipFbJ2cZ1xVSUDvp1N0c554Ypd0_vTHQpA0
-    short-id: 34787d7a
-  servername: www.microsoft.com
   client-fingerprint: chrome
   network: tcp
 - name: 台湾001vless
@@ -560,6 +493,241 @@ proxies:
   network: tcp
   aead: true
   tfo: false
+- name: US005登vless
+  type: vless
+  server: 192.204.34.36
+  port: 443
+  uuid: c9a94f26-cef3-4728-bf49-1201b994841a
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RQ9PEH2tbO673G0Kw0A8s0gD4GIqhMgoLR-2xe5-FCI
+    short-id: ''
+  servername: apps.apple.com
+  client-fingerprint: chrome
+  network: tcp
+- name: US001登vmess
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: US006登vless
+  type: vless
+  server: 209.166.46.195
+  port: 443
+  uuid: 73c16ed4-d111-4434-8b24-0dfe112a0813
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wIFJUBk4GRYT8Oim0-cPDwlGaTHh3kUYP2tOlKz1xlc
+    short-id: 9f4380a6
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  network: tcp
+- name: TW001vless
+  type: vless
+  server: 59.120.5.169
+  port: 443
+  uuid: c7475750-f104-4c07-b63b-06a4a2b9c476
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jLx1Lb-doJBxM8wJUnIglx4t4pGrIW0EcLGfUnMK1TQ
+    short-id: a2261cc14b0f3d5a
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  network: tcp
+- name: SG003登vless
+  type: vless
+  server: 43.153.215.3
+  port: 443
+  uuid: 29249aae-edc1-483f-98b3-f70dec2068e9
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: o8Ne4dsatUimeCfmnHHBKv0rdfs6rWicF3ZDyQrjAnE
+    short-id: ''
+  servername: www.tesla.com
+  client-fingerprint: chrome
+  network: tcp
+- name: SG001登vless
+  type: vless
+  server: 158.178.236.83
+  port: 443
+  uuid: 8477aa4b-8fb2-4b75-9e21-6b2a57f6f4cd
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KsOXdJFQC-zahqfSmDcR4BrRK2R0o19T9SBgARXkHSU
+    short-id: c16b8a1f2b520040
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+  network: tcp
+- name: SG002ss
+  type: ss
+  server: 130.94.41.66
+  port: 2333
+  cipher: aes-256-cfb
+  password: 123.com
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: RU001vless
+  type: vless
+  server: 194.226.169.189
+  port: 443
+  uuid: 701bab46-9453-41e6-ad47-009aa3df47e9
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
+    short-id: 3c6fc84d
+  servername: stats.vk-portal.net
+  client-fingerprint: chrome
+  network: tcp
+- name: 46481登hy2
+  type: hysteria2
+  server: 8.210.244.106
+  password: vGAtkk30d7
+  sni: cdn-dynmedia-1.microsoft.com
+  skip-cert-verify: true
+  port: 46481
+  obfs: salamander
+  obfs-password: password
+- name: US003登vless
+  type: vless
+  server: 38.175.216.7
+  port: 33381
+  uuid: 6cfe06cf-2059-4480-c8d1-38a9be043bf2
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc
+    short-id: ''
+  servername: swdist.apple.com
+  client-fingerprint: chrome
+  network: tcp
+- name: vmr001vmess
+  type: vmess
+  server: ev.bione.store
+  port: 443
+  uuid: 6bc5ff96-1bab-4d4a-ace5-5a83ff0694c1
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: ev.bione.store
+  ws-opts:
+    path: /dsg
+    headers:
+      Host: ev.bione.store
+- name: LA001vless
+  type: vless
+  server: 154.21.84.172
+  port: 443
+  uuid: 58538b9e-2cc5-42bf-90c5-305439916b31
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ArPjAWK7xOPzpWSxJTgJ2TVqHuBclErU3uiLczPJZhM
+    short-id: abcd1234
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  network: tcp
+- name: KR001登hy2
+  type: hysteria2
+  server: 47.80.6.141
+  password: how8JSc5DuJbiH5Du6sVtel5OJiMz3UTu0%2F6CRY%2FSe4%3D
+  sni: apps.apple.com
+  skip-cert-verify: true
+  port: 443
+- name: CA001vless
+  type: vless
+  server: ai.nyxtrans.com
+  port: 443
+  uuid: 6bffe2e2-86f1-4778-b09d-299db8fe4c3e
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7xYM_06zODv6DGn3c8OwI2U1ef_oJUFqqiEtHN8zTTM
+    short-id: fc8def901c4d789b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+  network: tcp
+- name: US002登vmess
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: US004登vmess
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -575,7 +743,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -597,24 +764,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -629,7 +807,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -651,24 +828,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: 📹 YouTube
   type: select
   proxies:
@@ -681,7 +869,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -703,24 +890,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -733,7 +931,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -755,24 +952,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: 🎮️ 游戏平台
   type: select
   proxies:
@@ -786,7 +994,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -808,24 +1015,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
@@ -837,7 +1055,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -859,24 +1076,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -890,7 +1118,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -912,24 +1139,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: 📲 电报信息
   type: select
   proxies:
@@ -943,7 +1181,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -965,24 +1202,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -996,7 +1244,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -1018,24 +1265,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: 🎯 国内直连
   type: select
   proxies:
@@ -1049,7 +1307,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -1071,24 +1328,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -1102,7 +1370,6 @@ proxy-groups:
   - US789登vmess
   - op_PL_3|1.7MB/s
   - US772|16MB/s
-  - TW1244|5MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL003hy2
@@ -1124,24 +1391,35 @@ proxy-groups:
   - AZ001hy2
   - 美国004hy2
   - CH902vless|2MB/s
-  - IN089登hy2|14MB/s
-  - IN347登hy2|7MB/s
   - US_003登|2.4MB/s
   - US_004登|2.7MB/s
   - US_008登|6.0MB/s
-  - 新加坡004登trojan
   - 美国002vless
   - 美国003登vless
-  - 日本002hy2
   - 俄罗斯001vless
   - 新加坡002登vless
-  - 新加坡004登vless
   - 台湾001vless
   - 日本001登ss
   - 美国008登vmrss
   - 新加坡003登vless
   - 新加坡001ss
   - 美国006登vmess
+  - US005登vless
+  - US001登vmess
+  - US006登vless
+  - TW001vless
+  - SG003登vless
+  - SG001登vless
+  - SG002ss
+  - RU001vless
+  - 46481登hy2
+  - US003登vless
+  - vmr001vmess
+  - LA001vless
+  - KR001登hy2
+  - CA001vless
+  - US002登vmess
+  - US004登vmess
 rule-providers:
   Proxy:
     type: http
