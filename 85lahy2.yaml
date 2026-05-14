@@ -5,6 +5,114 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
+- name: JP014登hy2|13MB/s
+  type: hysteria2
+  server: vpn-jp-002.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-jp-002.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: SG035登hy2|9MB/s
+  type: hysteria2
+  server: vpn-sg-003.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-003.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: IN089登hy2|14MB/s
+  type: hysteria2
+  server: vpn-in-002.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-in-002.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: VN128hy2|3MB/s
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-vn-001.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: US298vmess|7MB/s
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: VN240hy2|3MB/s
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-vn-001.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: US417vmess|2MB/s
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: US439vmess|9MB/s
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: VN349hy2|3MB/s
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-vn-001.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: JP673登hy2|16MB/s
+  type: hysteria2
+  server: vpn-jp-004.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-jp-004.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: SG973登hy2|15MB/s
+  type: hysteria2
+  server: vpn-sg-002.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-002.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: US1082vmess|6MB/s
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
 - name: 台湾001vless
   type: vless
   server: 59.120.5.169
@@ -660,6 +768,18 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -718,6 +838,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -774,6 +906,18 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -830,6 +974,18 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -887,6 +1043,18 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -942,6 +1110,18 @@ proxy-groups:
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -999,6 +1179,18 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -1056,6 +1248,18 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -1113,6 +1317,18 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -1170,6 +1386,18 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🚀 手动切换
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
@@ -1227,6 +1455,18 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
+  - JP014登hy2|13MB/s
+  - SG035登hy2|9MB/s
+  - IN089登hy2|14MB/s
+  - VN128hy2|3MB/s
+  - US298vmess|7MB/s
+  - VN240hy2|3MB/s
+  - US417vmess|2MB/s
+  - US439vmess|9MB/s
+  - VN349hy2|3MB/s
+  - JP673登hy2|16MB/s
+  - SG973登hy2|15MB/s
+  - US1082vmess|6MB/s
   - 台湾001vless
   - 新加坡003登vless
   - 新加坡004登vless
