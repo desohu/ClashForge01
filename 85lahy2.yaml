@@ -5,19 +5,99 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
-- name: US124|1MB/s
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+- name: qilan|DE001hy2
+  type: hysteria2
+  server: 178.18.147.66
+  password: github.com%2FAlvin9999-newpac%2Ffanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  port: 29900
+- name: AU001登hy2
+  type: hysteria2
+  server: vpn-au-002.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-au-002.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: qilan|HK001hy2
+  type: hysteria2
+  server: vpn-hk-004.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: qilan|US002hy2
+  type: hysteria2
+  server: vpn-us-015.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-us-015.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: qilan|US003hy2
+  type: hysteria2
+  server: 23.144.12.162
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  port: 443
+- name: qilan|VN001hy2
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  skip-cert-verify: true
+  port: 443
+- name: IN002登hy2
+  type: hysteria2
+  server: 13.234.35.16
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  port: 443
+- name: Cloudflare01_vless
+  type: vless
+  server: ns.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
   udp: true
-  network: tcp
-  aead: true
+  skip-cert-verify: false
   tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+- name: openai_vless
+  type: vless
+  server: openai.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+- name: Cloudflare02_vless
+  type: vless
+  server: support.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
 - name: VN128hy2|3MB/s
   type: hysteria2
   server: vpn-vn-001.fastervpn.world
@@ -25,19 +105,6 @@ proxies:
   sni: vpn-vn-001.fastervpn.world
   skip-cert-verify: true
   port: 443
-- name: US189|14MB/s
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
 - name: US214|15MB/s
   type: vmess
   server: 82.198.246.37
@@ -84,19 +151,6 @@ proxies:
   network: tcp
   aead: true
   tfo: false
-- name: US260|3MB/s
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
 - name: US282|3MB/s
   type: vmess
   server: 82.198.246.9
@@ -130,19 +184,6 @@ proxies:
   network: tcp
   aead: true
   tfo: false
-- name: US417|2MB/s
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
 - name: US455|10MB/s
   type: vmess
   server: 82.198.246.37
@@ -156,52 +197,6 @@ proxies:
   network: tcp
   aead: true
   tfo: false
-- name: US451|13MB/s
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US534|2MB/s
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US591|4MB/s
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: JP673登|16MB/s
-  type: hysteria2
-  server: vpn-jp-004.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-jp-004.fastervpn.world
-  skip-cert-verify: true
-  port: 443
 - name: US700|6MB/s
   type: vmess
   server: 82.198.246.9
@@ -293,45 +288,6 @@ proxies:
   network: tcp
   aead: true
   tfo: false
-- name: US817|6MB/s
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US834|10MB/s
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US845|3MB/s
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
 - name: US908|11MB/s
   type: vmess
   server: 82.198.246.9
@@ -352,45 +308,6 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US1052|3MB/s
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US1067|2MB/s
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US1114|6MB/s
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
   tls: false
   skip-cert-verify: false
   udp: true
@@ -466,19 +383,6 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
   network: tcp
-- name: kazakh-vmess
-  type: vmess
-  server: 45.159.250.38
-  port: 8443
-  uuid: cd3250c0-7d9c-4ca2-bd9e-6a3f49ed255e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
 - name: 荷兰001vless
   type: vless
   server: 151.242.88.133
@@ -503,40 +407,6 @@ proxies:
   sni: mb-pay.ru
   skip-cert-verify: true
   port: 8444
-- name: 俄罗斯001vless
-  type: vless
-  server: 194.226.169.189
-  port: 443
-  uuid: 701bab46-9453-41e6-ad47-009aa3df47e9
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
-    short-id: 3c6fc84d
-  servername: stats.vk-portal.net
-  client-fingerprint: chrome
-  network: tcp
-- name: 洛杉矶vless
-  type: vless
-  server: 154.21.84.172
-  port: 443
-  uuid: 58538b9e-2cc5-42bf-90c5-305439916b31
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ArPjAWK7xOPzpWSxJTgJ2TVqHuBclErU3uiLczPJZhM
-    short-id: abcd1234
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 美国001vmess
   type: vmess
   server: 82.198.246.233
@@ -645,69 +515,6 @@ proxies:
     path: /%2F%3Fed%3D2048
     headers:
       Host: vl.dalazhi.cloudns.biz
-- name: NL003hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 54608
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL009hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 56269
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL011hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 58576
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL013hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 57061
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL016hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 56654
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL008hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 58262
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL010hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 59220
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
 - name: NL014hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
@@ -726,15 +533,6 @@ proxies:
   port: 54608
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL006hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 59220
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
 - name: 美国002hy2
   type: hysteria2
   server: 2a02:180:6:1::1b3
@@ -742,60 +540,6 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   port: 51435
-- name: NL012hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 57061
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL015hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 51658
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL001hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 51658
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL007hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 58576
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL002hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 52318
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: 美国004hy2
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 52318
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
 - name: CH902vless|2MB/s
   type: vless
   server: 172.65.111.43
@@ -823,25 +567,11 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: SG973登hy2|15MB/s
-  type: hysteria2
-  server: vpn-sg-002.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-002.fastervpn.world
-  skip-cert-verify: true
-  port: 443
 - name: SG035登hy2|9MB/s
   type: hysteria2
   server: vpn-sg-003.fastervpn.world
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   sni: vpn-sg-003.fastervpn.world
-  skip-cert-verify: true
-  port: 443
-- name: IN089登hy2|14MB/s
-  type: hysteria2
-  server: vpn-in-002.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-in-002.fastervpn.world
   skip-cert-verify: true
   port: 443
 - name: 日本001登ss
@@ -860,23 +590,25 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -884,24 +616,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -910,28 +633,12 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: ♻️ 自动选择
   type: url-test
@@ -939,23 +646,25 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -963,24 +672,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -989,50 +689,36 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1040,24 +726,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1066,50 +743,36 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1117,24 +780,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1143,51 +797,37 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1195,24 +835,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1221,49 +852,35 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1271,24 +888,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1297,51 +905,37 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1349,24 +943,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1375,51 +960,37 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1427,24 +998,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1453,51 +1015,37 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1505,24 +1053,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1531,51 +1070,37 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1583,24 +1108,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1609,51 +1125,37 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - US124|1MB/s
+  - qilan|DE001hy2
+  - AU001登hy2
+  - qilan|HK001hy2
+  - qilan|US002hy2
+  - qilan|US003hy2
+  - qilan|VN001hy2
+  - IN002登hy2
+  - Cloudflare01_vless
+  - openai_vless
+  - Cloudflare02_vless
   - VN128hy2|3MB/s
-  - US189|14MB/s
   - US214|15MB/s
   - VN240hy2|3MB/s
   - US257|11MB/s
   - US259|3MB/s
-  - US260|3MB/s
   - US282|3MB/s
   - VN349hy2|3MB/s
   - US403|7MB/s
-  - US417|2MB/s
   - US455|10MB/s
-  - US451|13MB/s
-  - US534|2MB/s
-  - US591|4MB/s
-  - JP673登|16MB/s
   - US700|6MB/s
   - US701|4MB/s
   - US725|5MB/s
@@ -1661,24 +1163,15 @@ proxy-groups:
   - US737|6MB/s
   - US757|8MB/s
   - US760|7MB/s
-  - US817|6MB/s
-  - US834|10MB/s
-  - US845|3MB/s
   - US908|11MB/s
   - US986|6MB/s
-  - US1052|3MB/s
-  - US1067|2MB/s
-  - US1114|6MB/s
   - US298vmess|7MB/s
   - US417vmess|2MB/s
   - US439vmess|9MB/s
   - US1082vmess|6MB/s
   - 台湾001vless
-  - kazakh-vmess
   - 荷兰001vless
   - 拉脱维亚001hy2
-  - 俄罗斯001vless
-  - 洛杉矶vless
   - 美国001vmess
   - CH941vless|8MB/s
   - 美国003hy2
@@ -1687,28 +1180,12 @@ proxy-groups:
   - US772|16MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL003hy2
-  - NL009hy2
-  - NL011hy2
-  - NL013hy2
-  - NL016hy2
-  - NL008hy2
-  - NL010hy2
   - NL014hy2
   - NL005hy2
-  - NL006hy2
   - 美国002hy2
-  - NL012hy2
-  - NL015hy2
-  - NL001hy2
-  - NL007hy2
-  - NL002hy2
-  - 美国004hy2
   - CH902vless|2MB/s
   - 新加坡001ss
-  - SG973登hy2|15MB/s
   - SG035登hy2|9MB/s
-  - IN089登hy2|14MB/s
   - 日本001登ss
 rule-providers:
   Proxy:
