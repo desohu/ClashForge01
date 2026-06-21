@@ -1,5 +1,6 @@
+vless://580d81f8-4f30-49d6-ad90-59fb4a850313@tw3.miyazono-kaori.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=dlcdnets.asus.com&fp=chrome&security=reality&pbk=JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM&sid=473277e2&packetEncoding=xudp#%E5%8F%B0%E6%B9%BE001%E7%99%BB_vless
+vless://8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19@166.88.186.161:666/?type=ws&encryption=none&flow=&host=166.88.186.161&path=%2Fproxy&security=tls&sni=166.88.186.161&allowInsecure=1&fp=chrome&packetEncoding=xudp#%E7%BE%8E%E5%9B%BD001%E7%99%BB_vless
 trojan://e5c22f63-e473-496a-beff-fdc5655008c1@hkt.lajichang.xyz:2096/?type=tcp&security=tls&sni=bing.com&allowInsecure=1#%E9%A6%99%E6%B8%AF001_Trojan
-trojan://HutaoCloud@185.220.238.77:11543/?type=ws&path=%2Fapi&security=tls&sni=185.220.238.77&allowInsecure=1&fp=chrome#%E6%97%A0%E5%90%8D001_Trojan
 hy2://c4748166-0de5-4253-be79-d2a8da48bdbf@neirongbu0.fenfir.com:50012/?insecure=1&sni=neirongbu0.fenfir.com#%E7%BE%8E%E5%9B%BD%E7%9B%90%E6%B9%96%E5%9F%8Ehy2
 hysteria://5.83.129.153:20088/?insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=500&downmbps=1000&alpn=h3#%E5%BE%B7%E5%9B%BD001_hy1
 vless://monacoVPN@172.65.111.43:22/?encryption=none&flow=&path=%2F%40monacoVPN%40monacoVPN%40monacoVPN%40monacoVPN&type=tcp&headerType=http&packetEncoding=xudp#CH941vless%7C8MB%2Fs
@@ -10,5 +11,5 @@ ss://YWVzLTI1Ni1jZmI6MTIzLmNvbQ@130.94.41.66:2333#%E6%96%B0%E5%8A%A0%E5%9D%A1001
 trojan://MNEWOm0AUhVO6KHtnelYTiqNSEvaCrcyLfrXASngffx5eLUP@proxy.955657.xyz:443/?type=tcp&security=tls&sni=proxy.955657.xyz#%E7%BE%8E%E5%9B%BD002Trojan
 vmess://eyJhZGQiOiJzZzEudm1lc3Muc2l0ZSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0Ijoic2cxLnZtZXNzLnNpdGUiLCJpZCI6IklfTG92ZV/wn4e18J+HuF9TU0hNYXhfNGQ3MDlmMCIsIm5ldCI6IndzIiwicGF0aCI6Ii92bWVzcyNET05ULUZPUkdFVC1UTy1TVVBQT1JULVNTSE1BWC5DT00tVE8tS0VFUC1USElTLVNFUlZFUi1BTElWRSIsInBvcnQiOiI0NDMiLCJwcyI6IuaWsOWKoOWdoTAwMXZtZXNzIiwic2N5IjoiYXV0byIsInNuaSI6InNnMS52bWVzcy5zaXRlIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=
 vless://394f6981-a782-4779-9a85-e6cf22935d93@185.229.191.10:8443/?type=tcp&encryption=none&flow=&security=tls&sni=ams1.fromblancwithlove.com&fp=chrome&packetEncoding=xudp#%E8%8D%B7%E5%85%B0001_vless
-https://103.62.50.130/#%E6%BE%B3%E6%B4%B2001_https
-https://84.239.49.176:9002/?sni=www.bing.com#%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A001_https
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@vpn-sg-003.fastervpn.world:443/?insecure=1&sni=vpn-sg-003.fastervpn.world#%E6%96%B0%E5%8A%A0%E5%9D%A1003_hy2
+hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@vpn-sg-002.fastervpn.world:443/?insecure=1&sni=vpn-sg-002.fastervpn.world#%E6%96%B0%E5%8A%A0%E5%9D%A1004_hy2
