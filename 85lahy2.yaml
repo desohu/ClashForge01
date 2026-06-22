@@ -22,42 +22,6 @@ proxies:
   servername: dlcdnets.asus.com
   client-fingerprint: chrome
   network: tcp
-- name: 美国001登_vless
-  type: vless
-  server: 166.88.186.161
-  port: 666
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: 166.88.186.161
-  servername: 166.88.186.161
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxy
-    headers:
-      Host: 166.88.186.161
-- name: 香港001_Trojan
-  type: trojan
-  server: hkt.lajichang.xyz
-  port: 2096
-  password: e5c22f63-e473-496a-beff-fdc5655008c1
-  udp: true
-  tfo: false
-  tls: true
-  sni: bing.com
-  skip-cert-verify: true
-  network: tcp
-- name: 美国盐湖城hy2
-  type: hysteria2
-  server: neirongbu0.fenfir.com
-  password: c4748166-0de5-4253-be79-d2a8da48bdbf
-  sni: neirongbu0.fenfir.com
-  skip-cert-verify: true
-  port: 50012
 - name: 德国001_hy1
   type: hysteria
   server: 5.83.129.153
@@ -173,34 +137,156 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.COM-TO-KEEP-THIS-SERVER-ALIVE
     headers:
       Host: sg1.vmess.site
-- name: 荷兰001_vless
+- name: CH006vless|8MB/s
   type: vless
-  server: 185.229.191.10
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  server: 172.65.111.43
+  port: 22
+  uuid: 8a38623a-3e7f-5598-bdc9-894cbad4c5b6
   encryption: none
   udp: true
   skip-cert-verify: false
   tfo: false
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
+    headers:
+      Host:
+      - ''
+- name: FR047hy2|15MB/s
+  type: hysteria2
+  server: hy2.313186.xyz
+  password: github.com%2FAlvin9999-newpac%2Ffanqiang
+  sni: hy2.313186.xyz
+  skip-cert-verify: false
+  port: 18066
+- name: SG105Trojan|3MB/s
+  type: trojan
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  udp: true
+  tfo: false
   tls: true
-  sni: ams1.fromblancwithlove.com
-  servername: ams1.fromblancwithlove.com
+  sni: yazhou10.dynu.net
+  skip-cert-verify: false
+  network: tcp
+- name: FR168hy2|513KB/s
+  type: hysteria2
+  server: hy2.313186.xyz
+  password: github.com%2FAlvin9999-newpac%2Ffanqiang
+  sni: hy2.313186.xyz
+  skip-cert-verify: false
+  port: 18066
+- name: TW207登vless|54KB/s
+  type: vless
+  server: tw3.miyazono-kaori.com
+  port: 443
+  uuid: 580d81f8-4f30-49d6-ad90-59fb4a850313
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
+    short-id: 473277e2
+  servername: dlcdnets.asus.com
   client-fingerprint: chrome
   network: tcp
-- name: 新加坡003_hy2
-  type: hysteria2
-  server: vpn-sg-003.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-003.fastervpn.world
-  skip-cert-verify: true
+- name: US247vless|48KB/s
+  type: vless
+  server: secure.netraidly.ru
+  port: 40443
+  uuid: 821100fa-b819-4614-83ee-996c4cb142cb
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _fG0m51dASh_sWJMJYtX4tqhaG-h-J8H-r-q2iyOwBg
+    short-id: '3597'
+  servername: deepl.com
+  client-fingerprint: qq
+  network: tcp
+- name: FI253vless|7MB/s
+  type: vless
+  server: 217.217.247.249
   port: 443
-- name: 新加坡004_hy2
-  type: hysteria2
-  server: vpn-sg-002.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-002.fastervpn.world
+  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: enterprisekitten.com
+  client-fingerprint: firefox
+  network: tcp
+- name: GB327vless|51KB/s
+  type: vless
+  server: 77.110.110.81
+  port: 14302
+  uuid: 1dd5f2be-f124-4f35-9239-8abc042829c2
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lw7-Msn5E2O6HbBdqMw9SvoDJgbDIvHss0UVQ9iZFRc
+    short-id: 106f1604d65bb70c
+  servername: www.samsung.com
+  client-fingerprint: firefox
+  network: tcp
+- name: SG411Trojan|317KB/s
+  type: trojan
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  udp: true
+  tfo: false
+  tls: true
+  sni: yazhou10.dynu.net
   skip-cert-verify: true
+  network: tcp
+- name: DE495hy1|430KB/s
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  protocol: udp
+  up: '500'
+  down: '1000'
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 台湾001登_vless_1
+  type: vless
+  server: tw3.miyazono-kaori.com
   port: 443
+  uuid: 580d81f8-4f30-49d6-ad90-59fb4a850313
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
+    short-id: 473277e2
+  servername: dlcdnets.asus.com
+  client-fingerprint: chrome
+  network: tcp
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -209,9 +295,6 @@ proxy-groups:
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -220,9 +303,17 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -230,9 +321,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -241,17 +329,22 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -260,17 +353,22 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -279,18 +377,23 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -299,16 +402,21 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -317,18 +425,23 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -337,18 +450,23 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -357,18 +475,23 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -377,18 +500,23 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -397,18 +525,23 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
   - 台湾001登_vless
-  - 美国001登_vless
-  - 香港001_Trojan
-  - 美国盐湖城hy2
   - 德国001_hy1
   - CH941vless|8MB/s
   - HK002|6.1MB/s
@@ -417,9 +550,17 @@ proxy-groups:
   - 新加坡001ss
   - 美国002Trojan
   - 新加坡001vmess
-  - 荷兰001_vless
-  - 新加坡003_hy2
-  - 新加坡004_hy2
+  - CH006vless|8MB/s
+  - FR047hy2|15MB/s
+  - SG105Trojan|3MB/s
+  - FR168hy2|513KB/s
+  - TW207登vless|54KB/s
+  - US247vless|48KB/s
+  - FI253vless|7MB/s
+  - GB327vless|51KB/s
+  - SG411Trojan|317KB/s
+  - DE495hy1|430KB/s
+  - 台湾001登_vless_1
 rule-providers:
   Proxy:
     type: http
