@@ -1,8 +1,6 @@
 vless://580d81f8-4f30-49d6-ad90-59fb4a850313@tw3.miyazono-kaori.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=dlcdnets.asus.com&fp=chrome&security=reality&pbk=JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM&sid=473277e2&packetEncoding=xudp#%E5%8F%B0%E6%B9%BE001%E7%99%BB_vless
 hysteria://5.83.129.153:20088/?insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=500&downmbps=1000&alpn=h3#%E5%BE%B7%E5%9B%BD001_hy1
 vless://monacoVPN@172.65.111.43:22/?encryption=none&flow=&path=%2F%40monacoVPN%40monacoVPN%40monacoVPN%40monacoVPN&type=tcp&headerType=http&packetEncoding=xudp#CH941vless%7C8MB%2Fs
-vless://df301b32-1152-4526-9a63-beedd93d3156@104.18.46.69:80/?type=ws&encryption=none&flow=&host=vl.dalazhi.cloudns.biz&path=%2F%252F%253Fed%253D2048&packetEncoding=xudp#HK002%7C6.1MB%2Fs
-vless://df301b32-1152-4526-9a63-beedd93d3156@104.18.46.69:80/?type=ws&encryption=none&flow=&host=vl.dalazhi.cloudns.biz&path=%2F%252F%253Fed%253D2048&packetEncoding=xudp#59SG-HK_3%7C3.6MB%2Fs
 vless://monacoVPN@172.65.111.43:22/?encryption=none&flow=&path=%2F%40monacoVPN%40monacoVPN%40monacoVPN%40monacoVPN&type=tcp&headerType=http&packetEncoding=xudp#CH902vless%7C2MB%2Fs
 ss://YWVzLTI1Ni1jZmI6MTIzLmNvbQ@130.94.41.66:2333#%E6%96%B0%E5%8A%A0%E5%9D%A1001ss
 trojan://MNEWOm0AUhVO6KHtnelYTiqNSEvaCrcyLfrXASngffx5eLUP@proxy.955657.xyz:443/?type=tcp&security=tls&sni=proxy.955657.xyz#%E7%BE%8E%E5%9B%BD002Trojan
@@ -18,5 +16,4 @@ vless://1dd5f2be-f124-4f35-9239-8abc042829c2@77.110.110.81:14302/?type=tcp&encry
 trojan://OccIqeORGQwiNkwS@jpbgp.netvigor.cc:19128/?type=tcp&security=tls&sni=yazhou10.dynu.net&allowInsecure=1#SG411Trojan%7C317KB%2Fs
 hysteria://5.83.129.90:54177/?insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=500&downmbps=1000&alpn=h3#DE495hy1%7C430KB%2Fs
 https://test:test.+@testkr3.ssv.vc:30446/#%E9%9F%A9%E5%9B%BD001_https
-vless://580d81f8-4f30-49d6-ad90-59fb4a850313@tw3.miyazono-kaori.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=dlcdnets.asus.com&fp=chrome&security=reality&pbk=JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM&sid=473277e2&packetEncoding=xudp#%E5%8F%B0%E6%B9%BE001%E7%99%BB_vless
 https://84.239.49.198:9002/#opRO_006https%7C4.2MB%2Fs
