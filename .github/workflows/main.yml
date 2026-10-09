@@ -1,11 +1,7 @@
 name: ClashForge
-
 on:
   #schedule:
   #  - cron: '0 7-22/5 * * *'
-  push:
-    paths-ignore:
-      - '**'
   workflow_dispatch:
 
 jobs:
@@ -14,15 +10,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          # 转到 Settings > Secrets and variables > Actions
-          # 点击 New repository secret，添加 Secret，名称为 BOT，输入你的token
-          token: ${{ secrets.BOT }}
+        # 删掉 token: ${{ secrets.BOT }}，完全不用密钥
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10.10'
+          python-version: '3.10'
 
       - name: Install requirements.txt
         run: |
@@ -31,10 +24,11 @@ jobs:
       - name: Run ClashForge.py
         run: python ClashForge.py
 
-      - name: Commit and push file
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add clash_config.yaml
-          git commit -m "update" || echo "No changes to commit"
-          git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git
+      # 不再执行 git commit / git push（删掉那一大段push代码）
+
+      # ✅ 增加制品上传：运行结束可以在Actions页面下载 clash_config.yaml
+      - name: Upload generated config file
+        uses: actions/upload-artifact@v4
+        with:
+          name: clash_config_output
+          path: clash_config.yaml
